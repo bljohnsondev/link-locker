@@ -1,0 +1,16 @@
+name: link-locker
+root: ~/projects/link-locker
+
+windows:
+  - frontend:
+      root: ~/projects/link-locker/web
+      layout: main-vertical
+      panes:
+        - nvim .
+        - yarn dev
+  - backend:
+      root: ~/projects/link-locker/api
+      layout: main-vertical
+      panes:
+        - nvim .
+        - yarn start:dev

@@ -1,0 +1,24 @@
+@import 'sanitize.css';
+@import 'sanitize.css/forms.css';
+@import 'sanitize.css/typography.css';
+
+@import '@shoelace-style/shoelace/dist/themes/light.css';
+@import '@shoelace-style/shoelace/dist/themes/dark.css';
+
+.sl-toast-stack {
+  right: auto;
+  left: 50%;
+  transform: translateX(-50%);
+
+  :is(sl-alert) {
+    :is(strong) {
+      display: block;
+      margin-bottom: var(--sl-spacing-2x-small);
+    }
+  }
+
+  .toast-icon {
+    height: 26px;
+    width: 26px;
+  }
+}
