@@ -1,4 +1,4 @@
-import SlAlert from '@shoelace-style/shoelace/dist/components/alert/alert.js';
+import { SlAlert } from '@shoelace-style/shoelace';
 import {
   alertCircleOutline,
   checkmarkCircleOutline,
@@ -11,6 +11,7 @@ import { customElement, state } from 'lit/decorators.js';
 
 import { ToastMessage } from '@/types';
 
+import '@shoelace-style/shoelace/dist/components/alert/alert';
 import '@/components/dialogs/import-dialog';
 
 import './top-header';
