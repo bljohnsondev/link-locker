@@ -55,7 +55,8 @@ export class LinkService {
       .innerJoinAndSelect('link.folder', 'folder')
       .leftJoinAndSelect('link.tags', 'tags')
       .where('owner.id = :ownerId', { ownerId: userId })
-      .andWhere('folder.id = :folderId', { folderId });
+      .andWhere('folder.id = :folderId', { folderId })
+      .orderBy('link.createdAt', 'DESC');
 
     return await queryBuilder.getMany();
   }
